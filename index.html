@@ -7,32 +7,71 @@
     <title>san roku ku - film & tv</title>
   </head>
   <body>
-    <div class="navbar">
-      <p><a href="/index.html">san roku ku</a></p>
-      <!-- <a href="">Home</a> -->
-      <a href="/about.html">About</a>
-      <a href="/films.html">Films</a>
-      <!-- <a href="">Contact</a> -->
-    </div>
-    <div class="hero-image">
-      <img src="img/header-image.png" alt="" />
-      <div class="slogan">
-        <!-- <p>dynamic film and television production company</p> -->
-        <p>
-          Driven by a relentless pursuit of excellence, we pride ourselves on
-          delivering content that not only entertains but also challenges,
-          inspires, and leaves a lasting impact.
-        </p>
+    <!-- <div class="navbar">
+      <p><a href="/.">san roku ku</a></p>
+      <a href="#about">About</a>
+      <a href="#films">Films</a>
+      <a href="">Contact</a>
+    </div> -->
+    <div class="navbar" id="navbar">
+      <p><a href="/.">san roku ku</a></p>
+      <div id="menu" style="display: none">
+        <a href="#about">About</a>
+        <a href="#films">Films</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
+    <section>
+      <div class="hero-image" id="about">
+        <img src="img/header-image.png" alt="" />
+        <div class="slogan">
+          <!-- <p>dynamic film and television production company</p> -->
+          <p>
+            Driven by a relentless pursuit of excellence, we pride ourselves on
+            delivering content that not only entertains but also challenges,
+            inspires, and leaves a lasting impact. <br />
+            <br />From cutting-edge cinematography techniques to groundbreaking
+            visual effects, we harness the latest technology to elevate
+            storytelling to new heights. But our commitment to innovation goes
+            beyond the screen; we continuously explore new ways to engage with
+            our audience, from immersive experiences to interactive storytelling
+            formats.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-section">
+      <div class="gallery" id="films">
+        <div class="gallery-item">
+          <a href="#">
+            <img src="img/films/honey-wine.jpg" alt="Honey and Wine 2020" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="#">
+            <img src="img/films/the-job.jpg" alt="The Job 2017" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="#">
+            <img src="img/films/despair.jpg" alt="Despair 2017" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="contact">
+        <p>info@</p>
+      </div>
+    </section>
+
     <div class="footer">
-      <p><a href="">san roku ku</a></p>
-      <a href="">Contact Us</a>
-      <a href="">Work With Us</a>
-      <a href="">Services</a>
+      <p><a href="/.">san roku ku</a></p>
     </div>
     <div class="copyright">
       <p>All Rights Reserved</p>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
