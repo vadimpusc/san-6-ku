@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>san roku ku - film & tv</title>
+    <style>
+      /* Define styles for fade effect */
+      .fade-in {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      .fade-in.active {
+        opacity: 1;
+      }
+    </style>
   </head>
   <body>
-    <!-- <div class="navbar">
-      <p><a href="/.">san roku ku</a></p>
-      <a href="#about">About</a>
-      <a href="#films">Films</a>
-      <a href="">Contact</a>
-    </div> -->
     <div class="navbar" id="navbar">
       <p class="logo"><a href="/.">san roku ku</a></p>
-      <div id="menu" style="display: none">
+      <div id="menu" class="fade-in" style="display: none">
+        <p>&darr;</p>
         <a href="#about">About</a>
         <a href="#films">Films</a>
         <a href="#contact">Contact</a>
-        <!-- <div class="languages">
-          <a href="">En</a>
-          <a href="">Jp</a>
-        </div> -->
-        <!-- <p class="message">just a text...</p> -->
+        <p class="small-text">film & tv production</p>
       </div>
     </div>
     <section>
-      <div class="hero-image" id="about">
+      <div class="hero-image fade-in" id="about">
         <img src="img/header-image.png" alt="" />
         <div class="slogan">
           <p>
@@ -65,7 +66,7 @@
     </section>
 
     <section>
-      <div id="contact">
+      <div id="contact" class="fade-in">
         <p>info@sanrokuku.com</p>
       </div>
     </section>

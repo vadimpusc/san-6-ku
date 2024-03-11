@@ -1,160 +1,175 @@
 body {
-    margin: 50px;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
+  margin: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 html {
-    scroll-behavior: smooth;
-
+  scroll-behavior: smooth;
 }
 
-
 .navbar {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #000; 
-    color: #fff; 
-    padding: 10px;
-    z-index: 1000; 
-    text-align: center;
-    transition: height 0.3s ease; 
-    overflow: hidden; 
-    height: 50px;
-  }
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  z-index: 1000;
+  text-align: center;
+  transition: height 0.3s ease;
+  overflow: hidden;
+  height: 50px;
+}
 
-  .navbar:hover {
-    height: auto; 
-  }
+.navbar:hover {
+  height: auto;
+}
 
-  .navbar p {
-    margin: 0; 
-  }
+.navbar p {
+  margin: 0;
+}
 
-  p {
-    font-size: 20px;
-    line-height: 1.5;
-  }
+p {
+  font-size: 20px;
+  line-height: 1.5;
+}
 
-  .message {
-    padding-top: 30px;
-    font-size: 16px;
-  }
+.message {
+  padding-top: 30px;
+  font-size: 16px;
+}
 
-  .logo a {
-    font-size: 20px !important;
-    text-transform: uppercase;
-  }
+.logo a {
+  font-size: 20px !important;
+  text-transform: uppercase;
+}
 
-  .navbar a {
-    color: inherit; 
-    text-decoration: none;
-    display: block; 
-    margin-bottom: 5px; 
-    font-size: 20px;
-    line-height: 1.5;
-  }
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 1.5;
+}
 
-  .navbar a:hover {
-    background-color: white;
-    color: black;
-  }
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
 
-  .content {
-    margin-top: 60px; 
-  }
+.content {
+  margin-top: 60px;
+}
 
-  .navbar a.active {
-    font-weight: bold;
-  }
+/* .navbar a.active {
+  font-weight: bold;
+} */
 
 .hero-image > * {
-    max-width: 500px;
-   width: 100%;
-   height: auto;
-   object-fit: contain;
-   display: flex;
-   margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: flex;
+  margin: 0 auto;
 }
 
 .slogan {
-    flex-direction: column;
-    height: auto;
-    justify-content: center;
-    text-align: center;
-    max-width: 800px;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  max-width: 800px;
 }
 
 .footer {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 30px;
-    justify-content: flex-start;
-    font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-start;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .footer a {
-    color: white;
-    text-decoration: none;
-
+  color: white;
+  text-decoration: none;
 }
 
 .copyright p {
-    text-align: center;
-    font-size: 12px;
+  text-align: center;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 600px) {
-    .footer {
-        justify-content: center;
-        line-height: normal;
-        gap: 10px;
-    }
+  .footer {
+    justify-content: center;
+    line-height: normal;
+    gap: 10px;
+  }
 }
 
 .gallery-section {
-    height: auto;
+  height: auto;
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 900px;
-    width: 100%;
-    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  padding: 10px;
 }
 
 .gallery-item {
-    margin: 5px;
-    width: 250px;
+  margin: 5px;
+  width: 250px;
 }
 
 .gallery-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
-
 
 .contacts {
-
 }
 
-
 section {
-    height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Define styles for fade effect */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-in.active {
+  opacity: 1;
+}
+
+/* Additional styles for gallery items */
+.gallery-item.fade-in {
+  transition: opacity 0.5s ease-in-out;
+}
+.gallery-item.fade-in.active {
+  opacity: 1;
+}
+
+.small-text {
+  font-size: 12px;
 }
